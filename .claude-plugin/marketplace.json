@@ -1,0 +1,27 @@
+{
+  "name": "fuentes-technology",
+  "description": "Fuentes Technology plugins",
+  "owner": {
+    "name": "Fuentes Technology LTD",
+    "email": "support@fuentes.technology",
+    "url": "https://fuentes.technology"
+  },
+  "plugins": [
+    {
+      "name": "ftsim",
+      "displayName": "FT Simulation Assistant",
+      "description": "Author, check and simulate Modelica models with OpenModelica. Windows x64 only.",
+      "version": "0.4.0",
+      "author": {
+        "name": "Fuentes Technology LTD"
+      },
+      "homepage": "https://fuentes.technology/sim/",
+      "keywords": ["modelica", "openmodelica", "simulation", "mcp"],
+      "source": {
+        "source": "archive",
+        "url": "https://github.com/fuentes-technology/ftsim-releases/releases/download/v0.4.0/ftsim-0.4.0-win-x64.zip",
+        "sha256": "56c48b7a61fbbcd8a9f6c168793775510ee85e09458417118689a8b3acd655d2"
+      }
+    }
+  ]
+}

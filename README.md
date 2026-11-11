@@ -10,6 +10,8 @@ It's a free beta. Learn more at https://fuentes.technology/sim/.
 - [Claude Code](https://code.claude.com)
 - [OpenModelica](https://openmodelica.org) (tested with 1.27)
 
+If ftsim still fails in `/mcp` with OpenModelica installed, Windows Smart App Control may be blocking it. Email support@fuentes.technology.
+
 ## Install
 
 Run these two commands in a terminal:
@@ -19,7 +21,7 @@ claude plugin marketplace add https://raw.githubusercontent.com/fuentes-technolo
 claude plugin install ftsim@fuentes-technology
 ```
 
-Then start Claude Code and run `/plugin configure ftsim@fuentes-technology` to enter your OpenModelica folder, for example `C:\Program Files\OpenModelica1.27.0-64bit`. The server starts once the folder is set.
+FT Simulation Assistant uses the `OPENMODELICAHOME` variable that OpenModelica's installer sets. To use a different OpenModelica folder, start Claude Code and run `/plugin configure ftsim@fuentes-technology` to enter it, for example `C:\Program Files\OpenModelica1.27.0-64bit`.
 
 **Usage counts are sent by default.** FT Simulation Assistant sends counts of which tools ran and whether each succeeded, never your models, file paths, prompts or results. To stop, untick "Send usage counts to Fuentes Technology" in `/config`, then run `/reload-plugins`. Details: https://fuentes.technology/sim/docs/telemetry/
 
